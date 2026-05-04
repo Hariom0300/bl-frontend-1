@@ -1,0 +1,24 @@
+{
+    "name": "bl-frontend",
+    "version": "1.0.0",
+    "description": "Dongare Fashion E-commerce Frontend",
+    "main": "index.html",
+    "scripts": {
+        "start": "python -m http.server 8000",
+        "dev": "python -m http.server 8000",
+        "build": "echo 'Build process would go here'",
+        "deploy": "vercel --prod"
+    },
+    "keywords": [
+        "ecommerce",
+        "fashion",
+        "dongare",
+        "frontend",
+        "javascript",
+        "css"
+    ],
+    "author": "Hariom Vimal",
+    "license": "MIT",
+    "devDependencies": {},
+    "dependencies": {}
+}

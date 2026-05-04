@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "name": "bl-frontend",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "https://bl-backend.onrender.com/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1.html"
+    }
+  ],
+  "env": {
+    "REACT_APP_API_URL": "https://bl-backend.onrender.com/api",
+    "REACT_APP_SITE_URL": "https://hariom0300.github.io/BL-frontend",
+    "REACT_APP_SITE_NAME": "Dongare Fashion"
+  },
+  "functions": {
+    "api/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  }
+}
